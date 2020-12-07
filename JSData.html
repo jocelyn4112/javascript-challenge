@@ -38,55 +38,12 @@
         <section class="projects-section bg-light" id="projects">
             <div class="container">
                 <!-- Featured Project Row-->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-12">
-                    
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                   <!-- <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>-->
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>UFO Data</h4>
-                             <p class="text-black-50 mb-0">Search UFO sighting data  </p>
-                            <div class="container">
-                                <div class="row margin-top-50">
-                                  <div class="col-md-2">
-                                    <aside class="filters">
-                                      <div class="panel panel-default">
-                                        <div class="panel-heading">Filter Search</div>
-                                        <div class="panel-body">
-                                          <form>
-                                            <div class="form-group">
-                                              <ul class="list-group" id="filters">
-                                                <li class="filter list-group-item">
-                                                  <label for="date">Enter a Date</label>
-                                                  <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                                                </li>
-                                              </ul>
-                                            </div>
-                                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                                          </form>
-                                        </div>
-                                      </div>
-                                    </aside>
-                                  </div>
-                                  <div class="col-md-10">
-                                    <div id="table-area" class="">
-                                      <table id="ufo-table" class="table table-striped">
-                                        <thead>
-                                          <tr>
-                                            <th class="table-head">Date</th>
-                                            <th class="table-head">City</th>
-                                            <th class="table-head">State</th>
-                                            <th class="table-head">Country</th>
-                                            <th class="table-head">Shape</th>
-                                            <th class="table-head">Duration</th>
-                                            <th class="table-head">Comments</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                           
+                            <h4>UFO Sighting Data</h4>
+                            <p class="text-black-50 mb-0">Search data by date, shape, duration and location.</p>
                         </div>
                     </div>
                 </div>
@@ -122,7 +79,21 @@
                 </div>
             </div>
         </section>
-       
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <form class="form-inline d-flex">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container">
@@ -131,9 +102,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">LinkedIn</h4>
+                                <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="https://www.linkedin.com/in/jocelyn-conard-52b2a21/">Jocelyn Conard</a></div>
+                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +114,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">jocelyn4112@gmail.com</a></div>
+                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -151,13 +122,20 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">GitHub</h4>
+                                <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="https://github.com/jocelyn4112">jocelyn4112</a></div>
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
         <!-- Bootstrap core JS-->

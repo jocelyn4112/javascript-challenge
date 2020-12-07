@@ -24,7 +24,7 @@
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+               <!-- <div class="collapse navbar-collapse" id="navbarResponsive">-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Data.html">Data</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Analysis">Analysis</a></li>
@@ -33,80 +33,96 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">I Believe: </h1>
-                    <h1 class="mx-auto my-0 text-lowercase">An Alien Analysis </h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">An exploration into space and data</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Explore</a>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!--<img class="bimg-fluid" src="assets/img/Sky2.jpg" alt="" />-->
-                        <h2 class="text-white mb-4">Scope of Project</h2>
-                        <p class="text-white-50">
-                            An adventure in Data Vizualazion, JavaScript, Python, Bootstrap, Html, Flask, Splinter 
-                        </p>
-                    </div>
-                </div>
-               
-            </div>
-        </section>
+       
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container">
-                <!-- Featured Project Row WORD CLOUD -->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets\img\alien_wordsbw.png" alt="" /></div>
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-12">
+                    
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Overview</h4>
-                            <p class="text-black-50 mb-0">Are we alone in the universe? <br>How does the Fermi pardox make you feel?  </p>
-                            <p> fhfhf</p>
+                            <h4>UFO Data</h4>
+                             <p class="text-black-50 mb-0">Search UFO sighting data  </p>
+                            <div class="container">
+                                <div class="row margin-top-50">
+                                  <div class="col-md-2">
+                                    <aside class="filters">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">Filter Search</div>
+                                        <div class="panel-body">
+                                          <form>
+                                            <div class="form-group">
+                                              <ul class="list-group" id="filters">
+                                                <li class="filter list-group-item">
+                                                  <label for="date">Enter a Date</label>
+                                                  <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                                                </li>
+                                              </ul>
+                                            </div>
+                                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </aside>
+                                  </div>
+                                  <div class="col-md-10">
+                                    <div id="table-area" class="">
+                                      <table id="ufo-table" class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th class="table-head">Date</th>
+                                            <th class="table-head">City</th>
+                                            <th class="table-head">State</th>
+                                            <th class="table-head">Country</th>
+                                            <th class="table-head">Shape</th>
+                                            <th class="table-head">Duration</th>
+                                            <th class="table-head">Comments</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                           
                         </div>
                     </div>
                 </div>
-                <!-- Project One Row MAPS -->
+                <!-- Project One Row-->
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Map of Sightings</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <h4 class="text-white">Misty</h4>
+                                    <!<p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6"><img class="img-fluid" src="assets\img\alien_wordsbw.png" alt="" /></div>
                 </div>
-                <!-- Project BUBBLE -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets\img\alien_wordsbw.png" alt="" /></div>
-                    <div class="col-lg-6">
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Bubble Grph</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+            </div>
         </section>
-        
+       
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container">
@@ -117,7 +133,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">LinkedIn</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50">Jocelyn Conard</div>
+                                <div class="small text-black-50"><a href="https://www.linkedin.com/in/jocelyn-conard-52b2a21/">Jocelyn Conard</a></div>
                             </div>
                         </div>
                     </div>
@@ -142,13 +158,6 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container"></div></footer>
         <!-- Bootstrap core JS-->
