@@ -2,7 +2,7 @@
 var tableData = data;
 
 // The new student and grade to add to the table
-var data = ["Wash", 79];
+??var data = ["Wash", 79];
 
 // Use D3 to select the table
 var table = d3.select("table");
