@@ -1,6 +1,6 @@
 // from data.js
 const tableData = data;
-//console.log(tableData)
+console.log(tableData)
 
 // Use D3 to select the table body
 const tbody = d3.select("tbody");
@@ -31,9 +31,6 @@ button.on("click", handleClick);
 
 // Grab info we need 
 
-
-
-// This function is triggered when the button is clicked
 function handleClick() {
 
     // Select the input element and get the raw HTML node
