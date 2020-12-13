@@ -5,7 +5,7 @@ console.log(tableData)
 // Use D3 to select the table body
 const tbody = d3.select("tbody");
 
-
+//Build Table
 function buildtable(data){
 
     tbody.html("");
@@ -20,7 +20,9 @@ function buildtable(data){
 
         });
     });
+    console.log(data)
 }
+
 
 
 

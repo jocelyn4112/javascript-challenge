@@ -1,8 +1,8 @@
-/*!
-    * Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-    */
+
+    //* Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
+    //* Copyright 2013-2020 Start Bootstrap
+    //* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+   
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -47,37 +47,14 @@
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
-        }
-    };
+        };
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
     //
-})(jQuery); // End of use strict
+(jQuery); // End of use strict
+});
 
-/ from data.js
-var tableData = data;
 
-// The new student and grade to add to the table
-??var data = ["Wash", 79];
-
-// Use D3 to select the table
-var table = d3.select("table");
-
-// Use d3 to create a bootstrap striped table
-// http://getbootstrap.com/docs/3.3/css/#tables-striped
-table.attr("class", "table table-zebra striped");
-
-// Use D3 to select the table body
-var tbody = d3.select("tbody");
-
-// Append one table row `tr` to the table body
-var row = tbody.append("tr");
-
-// Append one cell for the student name
-row.append("td").text(newGrade[0]);
-
-// Append one cell for the student grade
-row.append("td").text(newGrade[1]);
