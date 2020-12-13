@@ -13,7 +13,7 @@ function buildtable(data){
 
         // Append one table row `tr` to the table body
         var row = tbody.append("tr");
-
+        // Grab rows 
         Object.values(element).forEach((val) => {
             var rowData = row.append("td");
             rowData.text(val);
