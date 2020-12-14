@@ -41,8 +41,10 @@ function handleClick() {
     // Get the value property of the input element
     var inputValue = inputElement.property("value");
     console.log(inputValue);
-
-    buildtable(tableData);
+    //var filterData = tableData.filter ()
+    var filteredData = tableData.filter( sighting => sighting.datetime === inputValue);
+    
+    buildtable(filteredData);
 
 }
 
